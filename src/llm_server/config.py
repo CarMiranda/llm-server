@@ -1,5 +1,6 @@
-from pydantic_settings import BaseSettings
 import typing as t
+
+from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):

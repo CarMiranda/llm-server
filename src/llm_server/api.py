@@ -3,7 +3,6 @@ from fastapi import APIRouter
 from llm_server.schemas import Reply
 from llm_server.service import ChatService
 
-
 chat_service = ChatService()
 
 api_router = APIRouter(prefix="/api/v1", tags=["API"])

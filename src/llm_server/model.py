@@ -1,8 +1,8 @@
-from pydantic import BaseModel
-import torch
-from transformers import pipeline
 import typing as t
 
+import torch
+from pydantic import BaseModel
+from transformers import pipeline
 
 DEFAULT_MODEL = "TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 
@@ -12,7 +12,10 @@ class Message(BaseModel):
     content: str
 
 
-SYSTEM_PROMPT = "You are a friendly, funny and interesting chatbot. You are direct, brief and only reply with the actual answer, do not repeat the question."
+SYSTEM_PROMPT = (
+    "You are a friendly, funny and interesting chatbot. You are direct, "
+    "brief and only reply with the actual answer, do not repeat the question."
+)
 
 
 def get_last_response(from_role: str, generated_text: str):

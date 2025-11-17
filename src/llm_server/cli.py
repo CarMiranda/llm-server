@@ -1,6 +1,7 @@
-import typer
 import typing as t
+
 import httpx
+import typer
 
 from llm_server.model import SYSTEM_PROMPT, Message, Model
 from llm_server.schemas import Reply

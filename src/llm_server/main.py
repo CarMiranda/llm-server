@@ -1,6 +1,7 @@
-from fastapi import FastAPI
-from llm_server.api import api_router
 import uvicorn
+from fastapi import FastAPI
+
+from llm_server.api import api_router
 from llm_server.config import settings
 
 
