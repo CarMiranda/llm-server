@@ -39,3 +39,8 @@ ignore = ["D100", "D104", "D105", "D107"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[dependency-groups]
+cli = [
+    "typer>=0.20.0",
+]

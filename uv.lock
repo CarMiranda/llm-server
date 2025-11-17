@@ -388,6 +388,11 @@ dev = [
     { name = "ruff" },
 ]
 
+[package.dev-dependencies]
+cli = [
+    { name = "typer" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "accelerate", specifier = ">=0.26.1" },
@@ -410,6 +415,9 @@ requires-dist = [
     { name = "uvicorn", specifier = ">=0.25.0" },
 ]
 provides-extras = ["dev", "cli"]
+
+[package.metadata.requires-dev]
+cli = [{ name = "typer", specifier = ">=0.20.0" }]
 
 [[package]]
 name = "markdown-it-py"
